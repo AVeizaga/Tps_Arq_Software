@@ -1,3 +1,6 @@
+/*
+Clase StackNode. Nodos enlazos usados para la implementacion de DynamicMemStack.
+*/
 #ifndef STACKNODE_H
 #define STACKNODE_H
 
@@ -8,8 +11,8 @@
 class StackNode
 {
 private:
-    StackableObject* item;
-    StackNode* prev;
+    StackableObject* item;  //Item del nodo.
+    StackNode* prev;    //Puntero al nodo anterior.
 public:
     StackNode(StackableObject* i);
     virtual ~StackNode();

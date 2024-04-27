@@ -1,3 +1,6 @@
+/*
+Iterfaz StackableObject. Utilizados por FixedArrayStack y DynamicMemStack.
+*/
 #ifndef STACKABLEOBJECT_H
 #define STACKABLEOBJECT_H
 

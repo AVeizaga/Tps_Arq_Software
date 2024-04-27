@@ -1,3 +1,6 @@
+/*
+Clase Vehiculo. Implementacion de la interfaz StackableObject.
+*/
 #ifndef VEHICULO_H
 #define VEHICULO_H
 

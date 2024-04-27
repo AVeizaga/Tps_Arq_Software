@@ -13,11 +13,12 @@ void StackUser::cargarPila()
 {
     Vehiculo* v[6];
 
-    v[0] = new Vehiculo(2, false, 180);
-    v[1] = new Vehiculo(4, false, 190);
-    v[2] = new Vehiculo(18, true, 100);
-    v[3] = new Vehiculo(1, false, 5000);
-    v[4] = new Vehiculo(6, true, 1800);
+    //Los numeros son al azar
+    v[0] = new Vehiculo(2, false, 1800);
+    v[1] = new Vehiculo(4, false, 2000);
+    v[2] = new Vehiculo(18, true, 4500);
+    v[3] = new Vehiculo(1, false, 5000);    //Monociclo motorizado
+    v[4] = new Vehiculo(6, true, 3000);
     //v[5] = new Vehiculo(6, true, 1800);
 
     for(int i = 0; i < 5; i++)
@@ -33,6 +34,6 @@ void StackUser::imprimirPila()
     {
         temp = this->stack->pop();
         temp->mostrarEnPantalla();
-        delete temp;
+        delete temp;    //Se eliminan los vehiculos alocados en cargarPila()
     }
 }

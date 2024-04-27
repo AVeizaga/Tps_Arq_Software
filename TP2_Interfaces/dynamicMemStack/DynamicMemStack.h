@@ -1,3 +1,8 @@
+/*
+Clase DynamicMemStack. Una implementacion de la interfaz StackInterface usando memoria dinamica.
+Los nodos del stack son tipo StackNode y cada uno contiene un puntero de tipo StackableObject.
+*/
+
 #ifndef DYNAMICMEMSTACK_H
 #define DYNAMICMEMSTACK_H
 
@@ -10,11 +15,15 @@
 class DynamicMemStack: public StackInterface
 {
 private:
-    int size;
-    StackNode *top;
+    int size;   //Tamaño del stack
+    StackNode *top; //Nodo superior
 public:
+    //Constructor y destructor
+    
     DynamicMemStack();
     virtual ~DynamicMemStack();
+
+    //Funciones implementadas de la interfaz
 
     virtual bool push(StackableObject *o) override;
     virtual StackableObject* pop() override;

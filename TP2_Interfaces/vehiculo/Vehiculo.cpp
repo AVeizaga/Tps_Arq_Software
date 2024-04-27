@@ -11,12 +11,14 @@ Vehiculo::~Vehiculo()
 {
 }
 
+//No se ve muy bien en consola
 void Vehiculo::mostrarEnPantalla()
 {
     cout << "El vehiculo tiene: " << endl;
-    cout << "*Cantidad de ruedas: " << this->cantRuedas << endl;
-    cout << "*Tiene baul?: " << this->tieneBaul << endl;
-    cout << "Cilindrada: " << this->cilindrada << endl;
+    cout << "-Cantidad de ruedas: " << this->cantRuedas << endl;
+    cout << "-Tiene baul?: " << this->tieneBaul << endl;
+    cout << "-Cilindrada: " << this->cilindrada << endl;
+    cout << endl;
 }
 
 int Vehiculo::getCantRuedas()

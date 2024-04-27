@@ -1,3 +1,6 @@
+/*
+Interfaz StackInterface. Implementada con FixedArrayStack y DynamicMemStack.
+*/
 #ifndef STACKINTERFACE_H
 #define STACKINTERFACE_H
 

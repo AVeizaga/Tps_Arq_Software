@@ -1,3 +1,6 @@
+/*
+Clase StackUser. Solo sirve para probar los stacks. Recibe un puntero al stack y luego se puede llenar y vaciar el mismo.
+*/
 #ifndef STACKUSER_H
 #define STACKUSER_H
 
